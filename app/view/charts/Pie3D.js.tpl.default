@@ -32,7 +32,7 @@ Ext.define('{appName}.view.charts.Pie3D', {
                 interactions: 'rotate'
             }
         },
-        bind: '{pieData}',
+        bind: '{["\{pieData\}"]}',
         series: [{
             type: 'pie3d',
             angleField: 'yvalue',

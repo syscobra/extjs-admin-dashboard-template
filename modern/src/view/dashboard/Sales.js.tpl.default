@@ -35,7 +35,7 @@ Ext.define('{appName}.view.dashboard.Sales', {
                 '#ffffff'
             ],
 
-            bind: '{quarterlyGrowth}',
+            bind: '{["\{quarterlyGrowth\}"]}',
 
             axes: [
                 {

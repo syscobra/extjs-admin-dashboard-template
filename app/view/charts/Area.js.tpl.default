@@ -20,7 +20,7 @@ Ext.define('{appName}.view.charts.Area', {
             '#115fa6',
             '#94ae0a'
         ],
-        bind: '{areaData}',
+        bind: '{["\{areaData\}"]}',
         series: [
             {
                 type: 'line',

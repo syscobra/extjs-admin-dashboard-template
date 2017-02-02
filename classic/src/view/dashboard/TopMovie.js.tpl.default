@@ -35,7 +35,7 @@ Ext.define('{appName}.view.dashboard.TopMovie', {
                 '#a66111'
             ],
             radius: 100,
-            bind: '{topMovies}',
+            bind: '{["\{topMovies\}"]}',
             series: [
                 {
                     type: 'pie',

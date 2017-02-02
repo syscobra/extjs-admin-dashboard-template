@@ -27,7 +27,7 @@ Ext.define('{appName}.view.dashboard.Sales', {
             colors: [
                 '#ffffff'
             ],
-            bind: '{quarterlyGrowth}',
+            bind: '{["\{quarterlyGrowth\}"]}',
             axes: [
                 {
                     type: 'category',

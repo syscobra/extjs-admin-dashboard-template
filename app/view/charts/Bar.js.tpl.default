@@ -18,7 +18,7 @@ Ext.define('{appName}.view.charts.Bar', {
         colors: [
             '#6aa5db'
         ],
-        bind: '{barData}',
+        bind: '{["\{barData\}"]}',
         axes: [{
             type: 'category',
             fields: [

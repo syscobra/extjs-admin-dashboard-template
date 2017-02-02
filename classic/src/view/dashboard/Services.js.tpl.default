@@ -30,7 +30,7 @@ Ext.define('{appName}.view.dashboard.Services', {
                     '#fdbf00',
                     '#ee929d'
                 ],
-                bind: '{servicePerformance}',
+                bind: '{["\{servicePerformance\}"]}',
                 series: [
                     {
                         type: 'pie',
@@ -75,7 +75,7 @@ Ext.define('{appName}.view.dashboard.Services', {
                         name: 'Finance',
                         value: '20%'
                     },
-                    tpl: '<div class="left-aligned-div">{name}</div><div class="right-aligned-div">{value}</div>'
+                    tpl: '<div class="left-aligned-div">{["\{name\}"]}</div><div class="right-aligned-div">{value}</div>'
                 },
                 {
                     xtype: 'progressbar',
@@ -90,7 +90,7 @@ Ext.define('{appName}.view.dashboard.Services', {
                         name: 'Research',
                         value: '68%'
                     },
-                    tpl: '<div class="left-aligned-div">{name}</div><div class="right-aligned-div">{value}</div>'
+                    tpl: '<div class="left-aligned-div">{["\{name\}"]}</div><div class="right-aligned-div">{value}</div>'
                 },
                 {
                     xtype: 'progressbar',
@@ -105,7 +105,7 @@ Ext.define('{appName}.view.dashboard.Services', {
                         name: 'Marketing',
                         value: '12%'
                     },
-                    tpl: '<div class="left-aligned-div">{name}</div><div class="right-aligned-div">{value}</div>'
+                    tpl: '<div class="left-aligned-div">{["\{name\}"]}</div><div class="right-aligned-div">{value}</div>'
                 },
                 {
                     xtype: 'progressbar',

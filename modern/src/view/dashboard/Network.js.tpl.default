@@ -44,7 +44,7 @@ Ext.define('{appName}.view.dashboard.Network', {
         {
             xtype: 'chartnetwork',
             flex: 1,
-            bind: '{networkData}'
+            bind: '{["\{networkData\}"]}'
         },
         {
             xtype: 'container',

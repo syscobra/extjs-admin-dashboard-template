@@ -19,7 +19,7 @@ Ext.define('{appName}.view.charts.Stacked', {
             '#6aa5db',
             '#ee929c'
         ],
-        bind: '{stackedData}',
+        bind: '{["\{stackedData\}"]}',
         axes: [{
             type: 'category',
             fields: [

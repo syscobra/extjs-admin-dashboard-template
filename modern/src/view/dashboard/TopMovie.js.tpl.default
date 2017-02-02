@@ -46,7 +46,7 @@ Ext.define('{appName}.view.dashboard.TopMovie', {
 
             radius: 100,
 
-            bind: '{topMovies}',
+            bind: '{["\{topMovies\}"]}',
 
             series: [
                 {

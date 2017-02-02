@@ -14,7 +14,7 @@ Ext.define('{appName}.view.profile.Timeline', {
         '<div class="timeline-item{userId\:this.cls(values,parent[xindex-2],xindex-1,xcount)}">' +
             '{date\:this.epoch(values,parent[xindex-2],xindex-1,xcount)}' +
             '<div class="profile-pic-wrap">' +
-                '<img src="resources/images/user-profile/{userId}.png" alt="Smiley face">' +
+                '<img src="resources/images/user-profile/{["\{userId\}"]}.png" alt="Smiley face">' +
                 '<div>{date\:this.elapsed} ago</div>' +
             '</div>' +
             '{["<tpl if=\"notificationType == \\'image_sharing\\'\">"]}' +

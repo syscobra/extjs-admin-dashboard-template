@@ -26,7 +26,7 @@ Ext.define('{appName}.view.search.Results', {
             border: false,
             title: 'All',
             routeId: 'all',
-            bind: '{allResults}',
+            bind: '{["\{allResults\}"]}',
             viewConfig: {
                 preserveScrollOnRefresh: true,
                 stripeRows: false
@@ -55,7 +55,7 @@ Ext.define('{appName}.view.search.Results', {
                     xtype: 'pagingtoolbar',
                     dock: 'bottom',
                     displayInfo: true,
-                    bind: '{allResults}'
+                    bind: '{["\{allResults\}"]}'
                 }
             ]
         },
@@ -65,7 +65,7 @@ Ext.define('{appName}.view.search.Results', {
             cls: 'user-grid',
             title: 'User Results',
             routeId: 'user',
-            bind: '{usersResults}',
+            bind: '{["\{usersResults\}"]}',
             scrollable: false,
             columns: [
                 {
@@ -141,7 +141,7 @@ Ext.define('{appName}.view.search.Results', {
                     dock: 'bottom',
                     itemId: 'userPaginationToolbar',
                     displayInfo: true,
-                    bind: '{usersResults}'
+                    bind: '{["\{usersResults\}"]}'
                 }
             ]
         },
@@ -152,7 +152,7 @@ Ext.define('{appName}.view.search.Results', {
             hideHeaders: true,
             title: 'Messages',
             routeId: 'messages',
-            bind: '{inboxResults}',
+            bind: '{["\{inboxResults\}"]}',
             scrollable: false,
             columns: [
                 {
@@ -195,7 +195,7 @@ Ext.define('{appName}.view.search.Results', {
                     dock: 'bottom',
                     itemId: 'pagingToolbar',
                     prependButtons: true,
-                    bind: '{inboxResults}'
+                    bind: '{["\{inboxResults\}"]}'
                 }
             ]
         }
