@@ -39,7 +39,7 @@ Ext.define('{appName}.view.dashboard.HDDUsage', {
             ],
 
             bind: {
-                store: '{["\{hddusage\}]"}'
+                store: '{["\{hddusage\}"]}'
             },
 
             axes: [

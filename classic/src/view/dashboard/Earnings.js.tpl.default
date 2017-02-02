@@ -36,7 +36,7 @@ Ext.define('{appName}.view.dashboard.Earnings', {
                 '#a66111'
             ],
             bind: {
-                store: '{["\{earnings\}]"}'
+                store: '{["\{earnings\}"]}'
             },
             axes: [
                 {

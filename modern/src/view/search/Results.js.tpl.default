@@ -11,14 +11,14 @@ Ext.define('{appName}.view.search.Results', {
         title: 'All',
         xtype: 'allresults',
         bind: {
-            store: '{["\{results\}]"}'
+            store: '{["\{results\}"]}'
         }
     },{
         title: 'Users',
         xtype: 'searchusers',
 
         bind: {
-            store: '{["\{users\}]"}'
+            store: '{["\{users\}"]}'
         }
     },{
         title: 'Messages',
@@ -27,7 +27,7 @@ Ext.define('{appName}.view.search.Results', {
         items: [{
             xtype: 'inbox',
             hideHeaders: true,
-            bind: '{["\{inbox\}]"}'
+            bind: '{["\{inbox\}"]}'
         }]
     }]
 });

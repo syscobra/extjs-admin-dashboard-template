@@ -128,7 +128,7 @@ Ext.define('{appName}.view.tablet.email.Email', {
             xtype: 'inbox',
             margin: '0 20 20 0',
             flex: 1,
-            bind: '{["\{inbox\}]"}'
+            bind: '{["\{inbox\}"]}'
         }
     ]
 });

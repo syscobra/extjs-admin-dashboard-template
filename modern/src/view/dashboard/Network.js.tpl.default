@@ -153,7 +153,7 @@ Ext.define('{appName}.view.dashboard.Network', {
                                     flex: 1,
                                     userCls: 'graph-analysis-right-inner-container right-value',
                                     bind: {
-                                        store: '{["\{visitors\}]"}'
+                                        store: '{["\{visitors\}"]}'
                                     }
                                 }
                             ]
@@ -178,7 +178,7 @@ Ext.define('{appName}.view.dashboard.Network', {
                                     flex: 1,
                                     userCls: 'graph-analysis-right-inner-container right-value',
                                     bind: {
-                                        store: '{["\{bounces\}]"}'
+                                        store: '{["\{bounces\}"]}'
                                     }
                                 }
                             ]

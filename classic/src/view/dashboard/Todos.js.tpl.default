@@ -28,7 +28,7 @@ Ext.define('{appName}.view.dashboard.Todos', {
                 y: false
             },
             bind: {
-                store: '{["\{todos\}]"}'
+                store: '{["\{todos\}"]}'
             },
             columns: [
                 {

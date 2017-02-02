@@ -20,7 +20,7 @@ Ext.define('{appName}.view.profile.Timeline', {
             '{["<tpl if=\"notificationType == \\'image_sharing\\'\">"]}' +
                 '<div class="line-wrap">' +
                     '<div class="contents-wrap">' +
-                        '<div class="shared-by"><a href="#">{["\{name\}]"}</a> shared an image</div>' +
+                        '<div class="shared-by"><a href="#">{["\{name\}"]}</a> shared an image</div>' +
                         '<img src="resources/images/img2.jpg" class="shared-img" alt="Smiley face">' +
                     '</div>' +
                 '</div>' +
@@ -28,14 +28,14 @@ Ext.define('{appName}.view.profile.Timeline', {
                 '<div class="line-wrap">' +
                     '<div class="contents-wrap">' +
                         '<div class="job-meeting"><a href="#">Job Meeting</a></div>' +
-                        '<div>{["\{content\}]"}</div>' +
+                        '<div>{["\{content\}"]}</div>' +
                     '</div>' +
                 '</div>' +
             '{["<tpl elseif=\"notificationType == \\'comment_reply\\'\">"]}' +
                 '<div class="line-wrap">' +
                     '<div class="contents-wrap">' +
-                        '<div class="shared-by"><a href="#">{["\{name\}]"}</a> commented on The Article</div>' +
-                        '<div class="article-comment"><span class="x-fa fa-quote-left"></span>{["\{content\}]"}</div>' +
+                        '<div class="shared-by"><a href="#">{["\{name\}"]}</a> commented on The Article</div>' +
+                        '<div class="article-comment"><span class="x-fa fa-quote-left"></span>{["\{content\}"]}</div>' +
                     '</div>' +
                 '</div>' +
             '{["<tpl elseif=\"notificationType == \\'new_follower\\'\">"]}' +
@@ -43,7 +43,7 @@ Ext.define('{appName}.view.profile.Timeline', {
                     '<div class="contents-wrap">' +
                         '<div class="followed-by">' +
                             '<img src="resources/images/user-profile/10.png" alt="Smiley face">' +
-                            '<div class="followed-by-inner"><a href="#">{["\{name\}]"}</a> followed you.</div>' +
+                            '<div class="followed-by-inner"><a href="#">{["\{name\}"]}</a> followed you.</div>' +
                         '</div>' +
                     '</div>' +
                 '</div>' +
@@ -51,7 +51,7 @@ Ext.define('{appName}.view.profile.Timeline', {
                 '<div class="line-wrap">' +
                     '<div class="contents-wrap">' +
                         '<div class="shared-by"><a href="#">Lorem ipsum dolor sit amet</a></div>' +
-                        '<div>{["\{content\}]"}</div>' +
+                        '<div>{["\{content\}"]}</div>' +
                     '</div>' +
                 '</div>' +
             '{["<tpl elseif=\"notificationType == \\'like\\'\">"]}' +
@@ -59,7 +59,7 @@ Ext.define('{appName}.view.profile.Timeline', {
                     '<div class="contents-wrap">' +
                         '<div class="followed-by">' +
                             '<img src="resources/images/user-profile/1.png" alt="Smiley face">' +
-                            '<div class="followed-by-inner"><a href="#">{["\{name\}]"}</a> Like The Article.</div>' +
+                            '<div class="followed-by-inner"><a href="#">{["\{name\}"]}</a> Like The Article.</div>' +
                         '</div>' +
                     '</div>' +
             '{["</tpl>"]}' +
