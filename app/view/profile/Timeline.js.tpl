@@ -6,7 +6,7 @@ Ext.define('{appName}.view.profile.Timeline', {
 
     scrollable: false,
 
-    bind: '{userTimeline}',
+    bind: '{["\{userTimeline\}"]}',
 
     itemSelector: '.timeline-item',
 
@@ -17,52 +17,52 @@ Ext.define('{appName}.view.profile.Timeline', {
                 '<img src="resources/images/user-profile/{userId}.png" alt="Smiley face">' +
                 '<div>{date\:this.elapsed} ago</div>' +
             '</div>' +
-            '<tpl if="notificationType == 'image_sharing'">' +
+            '{["<tpl if=\"notificationType == \\'image_sharing\\'\">"]}' +
                 '<div class="line-wrap">' +
                     '<div class="contents-wrap">' +
-                        '<div class="shared-by"><a href="#">{name}</a> shared an image</div>' +
+                        '<div class="shared-by"><a href="#">{["\{name\}]"}</a> shared an image</div>' +
                         '<img src="resources/images/img2.jpg" class="shared-img" alt="Smiley face">' +
                     '</div>' +
                 '</div>' +
-            '<tpl elseif="notificationType == 'job_meeting'">' +
+            '{["<tpl elseif=\"notificationType == \\'job_meeting\\'\">"]}' +
                 '<div class="line-wrap">' +
                     '<div class="contents-wrap">' +
                         '<div class="job-meeting"><a href="#">Job Meeting</a></div>' +
-                        '<div>{content}</div>' +
+                        '<div>{["\{content\}]"}</div>' +
                     '</div>' +
                 '</div>' +
-            '<tpl elseif="notificationType == 'comment_reply'">' +
+            '{["<tpl elseif=\"notificationType == \\'comment_reply\\'\">"]}' +
                 '<div class="line-wrap">' +
                     '<div class="contents-wrap">' +
-                        '<div class="shared-by"><a href="#">{name}</a> commented on The Article</div>' +
-                        '<div class="article-comment"><span class="x-fa fa-quote-left"></span>{content}</div>' +
+                        '<div class="shared-by"><a href="#">{["\{name\}]"}</a> commented on The Article</div>' +
+                        '<div class="article-comment"><span class="x-fa fa-quote-left"></span>{["\{content\}]"}</div>' +
                     '</div>' +
                 '</div>' +
-            '<tpl elseif="notificationType == 'new_follower'">' +
+            '{["<tpl elseif=\"notificationType == \\'new_follower\\'\">"]}' +
                 '<div class="line-wrap">' +
                     '<div class="contents-wrap">' +
                         '<div class="followed-by">' +
                             '<img src="resources/images/user-profile/10.png" alt="Smiley face">' +
-                            '<div class="followed-by-inner"><a href="#">{name}</a> followed you.</div>' +
+                            '<div class="followed-by-inner"><a href="#">{["\{name\}]"}</a> followed you.</div>' +
                         '</div>' +
                     '</div>' +
                 '</div>' +
-            '<tpl elseif="notificationType == 'comment'">' +
+            '{["<tpl elseif=\"notificationType == \\'comment\\'\">"]}' +
                 '<div class="line-wrap">' +
                     '<div class="contents-wrap">' +
                         '<div class="shared-by"><a href="#">Lorem ipsum dolor sit amet</a></div>' +
-                        '<div>{content}</div>' +
+                        '<div>{["\{content\}]"}</div>' +
                     '</div>' +
                 '</div>' +
-            '<tpl elseif="notificationType == 'like'">' +
+            '{["<tpl elseif=\"notificationType == \\'like\\'\">"]}' +
                 '<div class="line-wrap">' +
                     '<div class="contents-wrap">' +
                         '<div class="followed-by">' +
                             '<img src="resources/images/user-profile/1.png" alt="Smiley face">' +
-                            '<div class="followed-by-inner"><a href="#">{name}</a> Like The Article.</div>' +
+                            '<div class="followed-by-inner"><a href="#">{["\{name\}]"}</a> Like The Article.</div>' +
                         '</div>' +
                     '</div>' +
-            '</tpl>' +
+            '{["</tpl>"]}' +
         '</div>',
         {
             cls: function (value, record, previous, index, count) {

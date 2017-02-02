@@ -23,7 +23,7 @@ Ext.define('{appName}.view.phone.email.Email', {
             ui: 'bright-blue round',
             userCls: 'pop-out',
             bind: {
-                hidden: '{composing}'
+                hidden: '{["\{composing\}]"}'
             },
             width: 50,
             height: 50,
@@ -43,8 +43,8 @@ Ext.define('{appName}.view.phone.email.Email', {
             xtype: 'inbox',
             flex: 1,
             bind: {
-                store: '{inbox}',
-                hidden: '{composing}'
+                store: '{["\{inbox\}]"}',
+                hidden: '{["\{composing\}]"}'
             },
             reference: 'messages',
 

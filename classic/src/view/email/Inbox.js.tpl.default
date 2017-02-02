@@ -5,7 +5,7 @@ Ext.define('{appName}.view.email.Inbox', {
     cls: 'email-inbox-panel shadow',
 
     bind: {
-        store: '{inbox}'
+        store: '{["\{inbox\}]"}'
     },
 
     viewConfig: {

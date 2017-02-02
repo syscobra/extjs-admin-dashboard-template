@@ -6,5 +6,5 @@ Ext.define('{appName}.view.widgets.WidgetF', {
 
     height: 280,
 
-    tpl: '<div><span class="x-fa fa-{icon}"></span><h2>{amount}</h2><div class="infodiv">{type}</div></div>'
+    tpl: '<div><span class="x-fa fa-{["\{icon\}]"}"></span><h2>{amount}</h2><div class="infodiv">{["\{type\}]"}</div></div>'
 });

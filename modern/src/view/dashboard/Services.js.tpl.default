@@ -68,7 +68,7 @@ Ext.define('{appName}.view.dashboard.Services', {
                                 name: 'Finance',
                                 value: '20%'
                             },
-                            tpl: '<div class="left-aligned-div">{name}</div><div class="right-aligned-div">{value}</div>'
+                            tpl: '<div class="left-aligned-div">{["\{name\}]"}</div><div class="right-aligned-div">{value}</div>'
                         },
                         {
                             xtype: 'progress',
@@ -84,7 +84,7 @@ Ext.define('{appName}.view.dashboard.Services', {
                                 name: 'Research',
                                 value: '68%'
                             },
-                            tpl: '<div class="left-aligned-div">{name}</div><div class="right-aligned-div">{value}</div>'
+                            tpl: '<div class="left-aligned-div">{["\{name\}]"}</div><div class="right-aligned-div">{value}</div>'
                         },
                         {
                             xtype: 'progress',
@@ -100,7 +100,7 @@ Ext.define('{appName}.view.dashboard.Services', {
                                 name: 'Marketing',
                                 value: '12%'
                             },
-                            tpl: '<div class="left-aligned-div">{name}</div><div class="right-aligned-div">{value}</div>'
+                            tpl: '<div class="left-aligned-div">{["\{name\}]"}</div><div class="right-aligned-div">{value}</div>'
                         },
                         {
                             xtype: 'progress',

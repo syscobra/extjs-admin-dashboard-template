@@ -188,7 +188,7 @@ Ext.define('{appName}.view.forms.WizardForm', {
                     ui: this.colorScheme,
                     formBind: true,
                     bind: {
-                        disabled: '{atBeginning}'
+                        disabled: '{["\{atBeginning\}]"}'
                     },
                     listeners: {
                         click: 'onPreviousClick'
@@ -200,7 +200,7 @@ Ext.define('{appName}.view.forms.WizardForm', {
                     formBind: true,
                     reference : 'nextbutton',
                     bind: {
-                        disabled: '{atEnd}'
+                        disabled: '{["\{atEnd\}]"}'
                     },
                     listeners: {
                         click: 'onNextClick'

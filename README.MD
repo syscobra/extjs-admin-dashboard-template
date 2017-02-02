@@ -8,7 +8,7 @@ If you are like me, and tried to do a new app based on the sample but ended with
 app everywhere (the sencha generate command didn't replaced the Admin name with the correct
 App Name) then this repository is for you.
 
-Just download in a directory and then run the command (from the framework) to create a new
+Just clone in a directory and then run the command (from the framework) to create a new
 App based from this template as follows:
 
     sencha app generate --template Path_To_The_Downloaded_Template YourAppName Path_To_The_Destination_App
@@ -17,19 +17,9 @@ If you are using a workspace, you can go to your workspace framework and then us
 
     sencha app generate -s Path_To_The_Downloaded_Template YourAppName Path_To_The_Destination_App
 
-Right now after doing this command you will end with a error in the build, this because
-the sencha command will replace the app.json file requires, and remove "charts" and "ux" from
-it.
-
-Just go to your Path_To_The_Destination_App edit the app.json file and find "requires",
-then add "charts" and "ux" to it.
-
-Run the generate app command again, and you are done, you have your new App based on
-this template.
-
 * Enjoy
 
-Let me know any sugerencies you may have and happy codding
+Let me know any suggestion you may have and happy coding, just
 
 [syscobra](http://www.twitter.com/syscobra)
 

@@ -22,7 +22,7 @@ Ext.define('{appName}.view.dashboard.Todos', {
             userCls: 'dashboard-todo-list',
             hideHeaders: true,
             bind: {
-                store: '{todos}'
+                store: '{["\{todos\}]"}'
             },
 
             plugins: {
