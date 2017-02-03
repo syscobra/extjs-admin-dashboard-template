@@ -390,7 +390,7 @@
      *
      */
     "output": {
-        "base": "${ext\.dir}/build/examples/admin-dashboard/${build\.id}",
+        "base": "build/{appName}-dashboard/${build\.id}",
         "page": "../index.html",
         "manifest": "../${build\.id}.json",
         "appCache": {

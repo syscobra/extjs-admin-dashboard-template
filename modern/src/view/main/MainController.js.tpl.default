@@ -59,7 +59,7 @@ Ext.define('{appName}.view.main.MainController', {
 
             // Strip "?modern" or "&modern" with optionally more "&foo" tokens following
             // and ensure we don't start with "?".
-            s = s.replace(/(^\?|&)modern($|&)/, '').replace(/^\?/, '');
+            s = s.replace(/(^\\?|&)modern($|&)/, '').replace(/^\\?/, '');
 
             // Add "?classic&" before the remaining tokens and strip & if there are none.
             location.search = ('?classic&' + s).replace(/&$/, '');

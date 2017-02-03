@@ -164,7 +164,7 @@ Ext.define('{appName}.view.main.MainController', {
 
             // Strip "?classic" or "&classic" with optionally more "&foo" tokens
             // following and ensure we don't start with "?".
-            s = s.replace(/(^\?|&)classic($|&)/, '').replace(/^\?/, '');
+            s = s.replace(/(^\\?|&)classic($|&)/, '').replace(/^\\?/, '');
 
             // Add "?modern&" before the remaining tokens and strip & if there are
             // none.

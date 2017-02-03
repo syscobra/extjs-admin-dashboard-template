@@ -93,8 +93,8 @@ Ext.define('{appName}.view.email.Details', {
                     itemId: 'emailSubjectContainer',
                     padding: 10,
                     tpl: [
-                        '<div class="user-name">{from}</div>',
-                        '<div class="user-info">{title}</div>'
+                        '<div class="user-name">{["\{from\}"]}</div>',
+                        '<div class="user-info">{["\{title\}"]}</div>'
                     ]
                 }
             ]
@@ -111,7 +111,7 @@ Ext.define('{appName}.view.email.Details', {
             data: null,
             tpl: [
                 '<tpl for=".">',
-                    '<img class="single-mail-attachment" src="resources/images/{.}" ',
+                    '<img class="single-mail-attachment" src="resources/images/{["\{.\}"]}" ',
                           'alt="profile image">',
                 '</tpl>'
             ]
