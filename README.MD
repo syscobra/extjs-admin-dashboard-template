@@ -11,7 +11,7 @@ App Name) then this repository is for you.
 Just clone in a directory and then run the command (from the framework) to create a new
 App based from this template as follows:
 
-    sencha app generate -s Path_To_The_Downloaded_Template YourAppName Path_To_The_Destination_App
+    sencha generate app -s Path_To_The_Downloaded_Template YourAppName Path_To_The_Destination_App
 
 Enjoy!
 
